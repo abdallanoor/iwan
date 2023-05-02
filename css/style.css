@@ -365,9 +365,7 @@ ul {
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: #f8f9facc;
-    backdrop-filter: saturate(180%) blur(8px);
-    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    background-color: white;
     box-shadow: 0 0 4px #00000029;
   }
 }
