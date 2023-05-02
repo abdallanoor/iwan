@@ -367,6 +367,7 @@ ul {
     z-index: 99;
     background-color: #f8f9facc;
     backdrop-filter: saturate(180%) blur(8px);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
     box-shadow: 0 0 4px #00000029;
   }
 }
@@ -718,7 +719,7 @@ ul {
 .cour-des .panel p:last-child {
   padding-bottom: 15px;
 }
-.bold{
+.bold {
   font-weight: 500;
 }
 /* ------------------------------ End Courses ----------------------------- */
