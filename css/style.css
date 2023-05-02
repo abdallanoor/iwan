@@ -638,7 +638,7 @@ ul {
 .courses-page {
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
-  text-align: center;
+  /* text-align: center; */
   background-color: var(--section-background);
 }
 .courses-page .container > p {
@@ -703,11 +703,12 @@ ul {
   margin-top: 5px;
 }
 .cour-des .panel {
+  padding: 0 10px;
   border: solid 1.5px #dae6ee;
   border-top: 0;
 }
 .cour-des .panel p {
-  text-align: left;
+  font-size: 15px;
   padding-top: 2px;
   padding-bottom: 2px;
 }
