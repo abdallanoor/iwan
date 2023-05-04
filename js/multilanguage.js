@@ -1,4 +1,4 @@
-import translations from "../js/translations.js";
+import translations from "./translations.js";
 
 const languageSelector = document.querySelector("select");
 languageSelector.addEventListener("change", (event) => {
@@ -43,7 +43,7 @@ const setLanguage = (language) => {
   var spaceTwo = document.querySelectorAll("h4");
   for (var i = 0; i < spaceTwo.length; i++) {
     spaceTwo[i].style.letterSpacing = language === "ar" ? "0" : "1.6px";
-    spaceTwo[i].style.fontSize = language === "ar" ? "19px" : "16px";
+    spaceTwo[i].style.fontSize = language === "ar" ? "20px" : "16px";
   }
   //contactIcons - Margin
   var contactIcons = document.querySelectorAll(".contactIcons");
