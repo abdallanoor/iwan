@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;800&display=swap");
 /* --------------------------- Start global Rules --------------------------- */
 :root {
   --main-color: #0d6fad;
@@ -13,7 +13,7 @@
 
 * {
   /* font-family: "Montserrat", sans-serif; */
-  font-family: "Montserrat",'Noto Sans Arabic';
+  font-family: "Montserrat", "Tajawal", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -270,7 +270,7 @@ ul {
   background-color: white;
   padding: 7px 15px;
 }
-.whatsapp-Widget .chat .message h4 {
+.whatsapp-Widget .chat .message h3 {
   font-size: 13px;
   font-weight: 700;
   line-height: 18px;
@@ -291,7 +291,7 @@ ul {
   background: rgb(13, 111, 173);
   color: rgb(255, 255, 255);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 20px;
   display: flex;
   -webkit-box-pack: center;
@@ -303,9 +303,13 @@ ul {
   appearance: none;
   text-decoration: none;
 }
-.start-chat i {
+.start-chat::after {
+  font-family: "Font Awesome 6 brands";
+  content: "\f232";
+  font-weight: 500;
   font-size: 18px;
-  margin-right: 5px;
+  margin: 0 6px;
+  color: white;
 }
 
 /* ------------------------------ End Watsapp Button ----------------------------- */
@@ -325,7 +329,7 @@ ul {
     transform: translatex(50%);
     width: max-content;
     font-size: 13px;
-    letter-spacing: 0px;
+    letter-spacing: 0px !important;
     margin: 0;
   }
 }
@@ -501,21 +505,21 @@ ul {
 @media (max-width: 767px) {
   .nav-bar {
     position: absolute;
-    height: 0;
+    clip-path: inset(0 0 100% 0);
     top: 99%;
     left: 0;
     right: 0;
     width: 100%;
     background-color: white;
     color: #121413;
-    padding: 0;
+    padding: 5px;
     overflow: hidden;
     transition: all 0.4s;
     z-index: 5;
+    border-bottom: 1px solid #ddd;
   }
   .nav-bar.show {
-    height: 210px;
-    padding: 5px;
+    clip-path: inset(0 0 0 0);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   }
   .nav-bar ul {
@@ -936,7 +940,9 @@ ul {
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
 }
-
+.faqs .accordion {
+  font-weight: 500;
+}
 .accordion {
   background-color: transparent;
   color: #000;
@@ -955,7 +961,6 @@ ul {
 
 @media (max-width: 767px) {
   .accordion {
-    font-size: 15px;
     padding: 12px 15px;
     line-height: 1.5;
     cursor: default;
@@ -1436,7 +1441,7 @@ button[type="submit"]:hover {
 .footer .box .links li a:hover {
   color: white;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .footer .box .links li a::before {
     font-family: "Font Awesome 5 Free";
     content: "\F101";
@@ -1444,7 +1449,7 @@ button[type="submit"]:hover {
     margin-right: 10px;
     color: var(--main-color);
   }
-}
+} */
 
 .footer .box .line {
   display: flex;
@@ -1570,3 +1575,10 @@ button[type="submit"]:hover {
   }
 }
 /* ---------------------------- End Animations ---------------------------- */
+
+@media (max-width: 767px) {
+  #languageselect {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}

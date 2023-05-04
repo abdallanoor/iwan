@@ -16,10 +16,10 @@
   <link rel="shortcut icon" type="image/png" href="images/logofav.png">
   <link rel="apple-touch-icon" href="images/logofav.png">
   <!-- Discription -->
-  <meta name="description"
+  <meta name="description" 
     content="Iwan Academy is an educational online academy in order to serve online Qur’an, Tajweed, Arabic Language, and Islamic Studies to Arabs & non-Arabic speakers; with an interesting technique in teaching through online one-to-one sessions, we can work with your needs to ensure the best learning environment for you or your kids.">
   <!-- Title -->
-  <title>Iwan Academy | Learn Qur’an, Arabic And Islamic Studies</title>
+  <title data-i18n="topHome">Iwan Academy | Learn Qur’an, Arabic And Islamic Studies</title>
 </head>
 
 <body>
@@ -29,14 +29,14 @@
       <a href="../" name="logo"><img class="logo" src="images/logo.png" alt="logo"></a>
       <nav class="nav-bar">
         <ul class="nav-links">
-          <li><a class="active-page" href="../" lang="en" data-i18n="home">HOME</a></li>
+          <li><a class="active-page" href="../" data-i18n="home">HOME</a></li>
           <li><a href="about/" data-i18n="about">ABOUT</a></li>
           <li><a href="courses/" data-i18n="courses">COURSES</a></li>
           <li><a href="pricing/" data-i18n="pricing">PRICING</a></li>
           <li><a href="contact/" data-i18n="contact">CONTACT</a></li>
         </ul>
       </nav>
-      <select>
+      <select id="languageselect">
         <option value="en" data-i18n="english">English</option>
         <option value="ar" data-i18n="arabic">Arabic</option>
       </select>
@@ -67,20 +67,23 @@
   <!-- Start About -->
   <div class="about-section">
     <div class="container">
-      <h1>About Iwan Academy</h1>
+      <h1 data-i18n="hAbout">About Iwan Academy</h1>
       <div class="about-us">
         <img class="about-image" src="images/about-iamge.jpg " alt="" />
         <div class="about-des">
-          <p>
-            Iwan Academy is an educational online academy in order to serve online Qur’an, Tajweed, Arabic Language, and Islamic Studies to Arabs & non-Arabic speakers; with an interesting technique in teaching through online one-to-one sessions, we can work with your needs to ensure the best learning environment for you or your kids.
+          <p data-i18n="hAbout1">
+            Iwan Academy is an educational online academy in order to serve online Qur’an, Tajweed, Arabic Language, and
+            Islamic Studies to Arabs & non-Arabic speakers; with an interesting technique in teaching through online
+            one-to-one sessions, we can work with your needs to ensure the best learning environment for you or your
+            kids.
           </p>
-          <p>Our Tutors</p>
-          <p>
+          <p data-i18n="hAbout2">Our Tutors</p>
+          <p data-i18n="hAbout3">
             we know that learning is easier when you have an excellent teacher. Our instructors are native Egyptian
             Tutors qualified and graduated from Al-Azhar Al-Sharif University and they are passionate about the courses
             they teach and bring this enthusiasm into their classes and students.
           </p>
-          <a class="btn-shap" href="about/">Read More</a>
+          <a class="btn-shap" href="about/" data-i18n="hAbout4">Read More</a>
         </div>
       </div>
     </div>
@@ -89,15 +92,16 @@
   <!-- Start Courses -->
   <div class="courses-page">
     <div class="container">
-      <h1>Our Courses</h1>
-      <p>we offer variety of courses whether you’re looking for a beginner, or advanced course. All of our courses are
+      <h1 data-i18n="hCourses">Our Courses</h1>
+      <p data-i18n="hCoursesDes">we offer variety of courses whether you’re looking for a beginner, or advanced course.
+        All of our courses are
         customizable for your needs to make sure you have reached your goals.</p>
       <div class="course-info">
-        <h2 class="cour-title">Islamic Studies</h2>
+        <h2 class="cour-title" data-i18n="islamic">Islamic Studies</h2>
         <div class="cour-des">
           <img src="images/course3.png" alt="">
           <div id="accordionFlushExample">
-            <button class="accordion">Aqidah (Islamic Creed) :</button>
+            <button class="accordion" data-i18n="Aqidah">Aqidah (Islamic Creed) :</button>
             <div class="panel">
               <p class="bold">The curriculum has 3 levels:</p>
               <p>- <span class="bold">Beginner level:</span> It covers learners from the age of 5 years, an interactive
@@ -111,7 +115,7 @@
                 'Ahl al-Sunnah" by Imam al-Juwayni.</p>
             </div>
 
-            <button class="accordion">Seerah and Islamic History :</button>
+            <button class="accordion" data-i18n="Seerah">Seerah and Islamic History :</button>
             <div class="panel">
               <p class="bold">
                 The curriculum has 3 levels:
@@ -128,9 +132,10 @@
                 birth (PBUH), his upbringing, prophethood, conquests, and death.</p>
             </div>
 
-            <button class="accordion">Tafseer (exegesis) :</button>
+            <button class="accordion" data-i18n="Tafseer">Tafseer (exegesis) :</button>
             <div class="panel">
-              <p class="bold">These online Tafseer Classes have been designed to meet certain outcomes at the end of the program:</p>
+              <p class="bold">These online Tafseer Classes have been designed to meet certain outcomes at the end of the
+                program:</p>
               <p>- Developing a strong bond with the book of Allah.</p>
               <p>- Understanding the meaning and interpretation of the verses and surahs.</p>
               <p>- Covering the History, Science, and Translation of the Quran.</p>
@@ -146,7 +151,7 @@
               <p>- Reciting the Quran by keeping its meaning and interpretation.</p>
             </div>
 
-            <button class="accordion">Fiqh :</button>
+            <button class="accordion" data-i18n="Fiqh">Fiqh :</button>
             <div class="panel">
               <p class="bold">Fiqh has 4 levels:</p>
               <p>- <span class="bold">Level 1</span> Introductory: It is directed to the age of 6 years or beginners in
@@ -165,7 +170,7 @@
                 jurisprudence, deriving evidence and applying it in life situations.</p>
             </div>
 
-            <button class="accordion">Hadith :</button>
+            <button class="accordion" data-i18n="Hadith">Hadith :</button>
             <div class="panel">
               <p class="bold">
                 The Hadith curriculum has 3 levels:
@@ -185,7 +190,7 @@
               </p>
             </div>
 
-            <button class="accordion">Islamic Manners For Children :</button>
+            <button class="accordion" data-i18n="Manners">Islamic Manners For Children :</button>
             <div class="panel">
               <p>
                 - Sunan and Adab (Etiquette) of eating, drinking, sleeping,
@@ -212,12 +217,12 @@
           data-i18n="bookfree">BOOK FREE EVALUATION</a>
       </div>
       <div class="course-info">
-        <h2 class="cour-title">Arabic Studies</h2>
+        <h2 class="cour-title" data-i18n="arabicStudies">Arabic Studies</h2>
         <div class="cour-des reverse">
           <img src="images/course2.png" alt="">
           <div id="accordionFlushExample">
 
-            <button class="accordion">Arabic grammar :</button>
+            <button class="accordion" data-i18n="grammar">Arabic grammar :</button>
             <div class="panel">
               <p class="bold">
                 Learners will:
@@ -255,24 +260,28 @@
               </p>
             </div>
 
-            <button class="accordion">Arabic Conversation :</button>
+            <button class="accordion" data-i18n="Conversation">Arabic Conversation :</button>
             <div class="panel">
-              <p>We offer advanced Arabic and Conversations for all ages. This course is for those who want to improve their existing level of the language and enhance their vocabulary level.</p>
+              <p>We offer advanced Arabic and Conversations for all ages. This course is for those who want to improve
+                their existing level of the language and enhance their vocabulary level.</p>
             </div>
 
-            <button class="accordion">Arabic for Children :</button>
+            <button class="accordion" data-i18n="arabicChildren">Arabic for Children :</button>
             <div class="panel">
-              <p>We offer Courses for children beginners;. When teaching children The tutors ensure that classes are fun, enjoyable, and engaging and include games to help keep the children's attention.</p>
+              <p>We offer Courses for children beginners;. When teaching children The tutors ensure that classes are
+                fun, enjoyable, and engaging and include games to help keep the children's attention.</p>
             </div>
 
-            <button class="accordion">Arabic for Quran :</button>
+            <button class="accordion" data-i18n="arabicQuran">Arabic for Quran :</button>
             <div class="panel">
               <p>- Learn how to read with all vowels step by step.</p>
-              <p>- From one letter to two connected letters then to one word with three letters with vowels till reading small verses in a suitable level.</p>
-              <p>- Upon successful completion of this course, students will be able to read and listen some of the Verses from Mushaf efficiently.</p>
+              <p>- From one letter to two connected letters then to one word with three letters with vowels till reading
+                small verses in a suitable level.</p>
+              <p>- Upon successful completion of this course, students will be able to read and listen some of the
+                Verses from Mushaf efficiently.</p>
             </div>
 
-            <button class="accordion">Modern Standard Arabic :</button>
+            <button class="accordion" data-i18n="arabicModern">Modern Standard Arabic :</button>
             <div class="panel">
               <p class="bold">
                 After you complete the Beginner level, You will be able to:
@@ -305,29 +314,34 @@
                 - speak about the Muslim countries over the world then the security and the development.
               </p>
               <p>
-                With studying some lecture in “sarf” (the name of the verb- the name of the adverb- the infinitive more than 3 letters).
+                With studying some lecture in “sarf” (the name of the verb- the name of the adverb- the infinitive more
+                than 3 letters).
               </p>
               <p class="bold">
                 After you complete the advanced level, You will be able to:
               </p>
               <p>
-                - speak about the miracle of Quran, problem of minority then speak about The Prophet -peace upon him- Sunna way of living.
+                - speak about the miracle of Quran, problem of minority then speak about The Prophet -peace upon him-
+                Sunna way of living.
               </p>
               <p>
-                - speak about the kids’ reading stages, reasons for the scholar’s immigrants, the daily life and then end with some stories and jokes.
+                - speak about the kids’ reading stages, reasons for the scholar’s immigrants, the daily life and then
+                end with some stories and jokes.
               </p>
               <p>
-                - speak about the equality in Islam, and the animal rights, the Arabic proverbs and the marriage problems.
+                - speak about the equality in Islam, and the animal rights, the Arabic proverbs and the marriage
+                problems.
               </p>
               <p>
-                - speak about the relationship between the parents and their kids, the relation between the water with the life and a father well. 
+                - speak about the relationship between the parents and their kids, the relation between the water with
+                the life and a father well.
               </p>
               <p>
                 With studying the important Nahw – Grammar- and Sarf classes.
               </p>
             </div>
 
-            <button class="accordion">AL-Sarf :</button>
+            <button class="accordion" data-i18n="alSarf">AL-Sarf :</button>
             <div class="panel">
               <p>- To acknowledge the reasons behind creating the knowledge of “Sarf”, its relation with “Nahw”
                 knowledge and the importance of “Sarf” in the Arabic language.</p>
@@ -336,7 +350,7 @@
               <p>- To use it on your speeches and conversations with the Arabic “FUSHA “.</p>
             </div>
 
-            <button class="accordion">The Egyptian dialect :</button>
+            <button class="accordion" data-i18n="egyptianDialect">The Egyptian dialect :</button>
             <div class="panel">
               <p>- The Egyptian dialect is the most commonly understood dialect in the Arab world.</p>
               <p>- This course is perfect for those looking to travel to Arabic speaking countries.</p>
@@ -349,11 +363,11 @@
           data-i18n="bookfree">BOOK FREE EVALUATION</a>
       </div>
       <div class="course-info">
-        <h2 class="cour-title">Qur’an</h2>
+        <h2 class="cour-title" data-i18n="quran">Qur’an</h2>
         <div class="cour-des">
           <img src="images/course1.png" alt="">
           <div id="accordionFlushExample">
-            <button class="accordion">Quran Recitation with Tajweed :</button>
+            <button class="accordion" data-i18n="quranRecitation">Quran Recitation with Tajweed :</button>
             <div class="panel">
               <p>
                 Quran Recitation Course is designed for those who would like to start the exciting journey of reading
@@ -376,7 +390,7 @@
                 some familiarity with the language.
               </p>
             </div>
-            <button class="accordion">Memorizing Quran with understanding :</button>
+            <button class="accordion" data-i18n="quranMemorizing">Memorizing Quran with understanding :</button>
             <div class="panel">
               <p>
                 - Accurate memorization of the Book of Allah.
@@ -397,7 +411,7 @@
               <p>2- Memorizing some selected Surahs chosen by the student.</p>
               <p>3- Memorizing the whole Quran.</p>
             </div>
-            <button class="accordion">Tajweed Rules :</button>
+            <button class="accordion" data-i18n="Tajweed">Tajweed Rules :</button>
             <div class="panel">
               <p>- Tajweed Rules Course is designed for learning how to pronounce the letters in the words correctly
                 such as when a consonant letter is silent or not, etc.</p>
@@ -415,32 +429,32 @@
   <!-- Start Why iwan -->
   <div class="why-iwan">
     <div class="container">
-      <h1>Why iwan?</h1>
+      <h1 data-i18n="hwhy">Why iwan?</h1>
       <div class="features">
         <div class="box">
           <img src="images/videocall.png" alt="">
-          <h3>One-on-One</h3>
-          <p>Modern fun learning in One-on-One classes.</p>
+          <h3 data-i18n="whyOne">One-on-One</h3>
+          <p data-i18n="whyOneDes">Modern fun learning in One-on-One classes.</p>
         </div>
         <div class="box">
           <img src="images/islamic.png" alt="">
-          <h3>Professional Tutors</h3>
-          <p>Al-Azhar Al-Sharif certified male and female professional tutors are available</p>
+          <h3 data-i18n="whyPro">Professional Tutors</h3>
+          <p data-i18n="whyProDes">Al-Azhar Al-Sharif certified male and female professional tutors are available</p>
         </div>
         <div class="box">
           <img src="images/learning.png" alt="">
-          <h3>Learn With Fun</h3>
-          <p>Reward based learning using the best methods and technologies</p>
+          <h3 data-i18n="whyFun">Learn With Fun</h3>
+          <p data-i18n="whyFunDes">Reward based learning using the best methods and technologies</p>
         </div>
         <div class="box">
           <img src="images/working-hours.png" alt="">
-          <h3>Flexible Schedule</h3>
-          <p>Learn from anywhere and according to your schedule</p>
+          <h3 data-i18n="whyFlex">Flexible Schedule</h3>
+          <p data-i18n="whyFlexDes">Learn from anywhere and according to your schedule</p>
         </div>
         <div class="box">
           <img src="images/free.png" alt="">
-          <h3>Free Demo Class</h3>
-          <p>Get your first free demo class and no payment is required</p>
+          <h3 data-i18n="whyFree">Free Demo Class</h3>
+          <p data-i18n="whyFreeDes">Get your first free demo class and no payment is required</p>
         </div>
       </div>
     </div>
@@ -449,29 +463,30 @@
   <!-- Start How Works -->
   <div class="how-works">
     <div class="container">
-      <h1>HOW IT WORKS</h1>
+      <h1 data-i18n="hHowWork">HOW IT WORKS</h1>
       <div class="steps">
         <div class="step">
           <img src="images/planning.png" alt="">
           <h4>1</h4>
-          <h3>Planning</h3>
-          <p>Pick a course and create your goal.</p>
+          <h3 data-i18n="howWorkPlan">Planning</h3>
+          <p data-i18n="howWorkPlanDes">Pick a course and create your goal.</p>
         </div>
         <div class="step">
           <img src="images/schedule.png" alt="">
           <h4>2</h4>
-          <h3>Scheduling</h3>
-          <p>Share your availability and make your schedule.</p>
+          <h3 data-i18n="howWorkSched">Scheduling</h3>
+          <p data-i18n="howWorkSchedDes">Share your availability and make your schedule.</p>
         </div>
         <div class="step">
           <img src="images/studying.png" alt="">
           <h4>3</h4>
-          <h3>Studying</h3>
-          <p>Pay and start your classes.</p>
+          <h3 data-i18n="howWorkStudy">Studying</h3>
+          <p data-i18n="howWorkStudyDes">Pay and start your classes.</p>
         </div>
       </div>
-      <p class="simple">IT REALLY IS THAT SIMPLE!</p>
-      <a class="btn-shap" href="https://calendly.com/salahamin911/30min" target="_blank">GET STARTED</a>
+      <p class="simple" data-i18n="howWorkSimple">IT REALLY IS THAT SIMPLE!</p>
+      <a class="btn-shap" data-i18n="howWorkStart" href="https://calendly.com/salahamin911/30min" target="_blank">GET
+        STARTED</a>
     </div>
   </div>
   <!-- End How Works -->
@@ -542,55 +557,59 @@
   <!-- End Testimonials -->
   <!-- Start FAQS -->
   <div class="faqs">
-    <h1>FAQS</h1>
+    <h1 data-i18n="faqs">FAQS</h1>
     <div class="container " id="accordionFlushExample">
-      <button class="accordion">What does Iwan mean?</button>
+      <button class="accordion" data-i18n="faqOne">What does Iwan mean?</button>
       <div class="panel">
-        <p>The Arabic word “Iwan” means Hall.
+        <p data-i18n="faqOneDes">The Arabic word “Iwan” means Hall.
           Iwan Is found in many of the marvelous mosques around the world. it is serving a number of functions
           including, prayer, teaching, lodging of teachers and students, keeping books and as a reading library as well
           as a number of charitable activities in stopping stations on the road of pilgrims intended to serve the ill
           and the needy. More importantly it became the area in which traditional circles of knowledge formed and
           classes would gather to pass down the sacred sciences, generation to generation.
-
           Even today many great mosques around the world hold classes under their “Iwans.”
         </p>
       </div>
-      <button class="accordion">How Can I Start? </button>
+
+      <button class="accordion" data-i18n="faqTwo">How Can I Start? </button>
       <div class="panel">
-        <p>There will be
-          an interview process to ensure the student can benefit from the services. Please contact us if you are unsure
+        <p data-i18n="faqTwoDes">There will be an interview process to ensure the student can benefit from the services.
+          Please contact us if you are unsure
           whether you meet the prerequisite and for more details.</p>
       </div>
 
-      <button class="accordion">What software or technical equipment do I need?</button>
+      <button class="accordion" data-i18n="faqThree">What software or technical equipment do I need?</button>
       <div class="panel">
-        <p>All classes are conducted are conducted via Zoom, so you will need to download Zoom on your laptop, tablet or
+        <p data-i18n="faqThreeDes">All classes are conducted are conducted via Zoom, so you will need to download Zoom
+          on your laptop, tablet or
           smartphone. We also suggest you invest in some good quality headphones, as well as a good internet connection.
         </p>
       </div>
 
-      <button class="accordion">Are the teachers ljazah Certified?</button>
+      <button class="accordion" data-i18n="faqFour">Are the teachers ljazah Certified?</button>
       <div class="panel">
-        <p>Yes, all of our teachers are ljazah certified and Huffaz. They also graduated from reputed Islamic
+        <p data-i18n="faqFourDes">Yes, all of our teachers are ljazah certified and Huffaz. They also graduated from
+          reputed Islamic
           Universities.
         </p>
       </div>
 
-      <button class="accordion">Can I reschedule classes?</button>
+      <button class="accordion" data-i18n="faqFive">Can I reschedule classes?</button>
       <div class="panel">
-        <p>We are happy to reschedule a class if you give us 24 hours notice. All students receive our rescheduling
-          policy upon registering. </p>
+        <p data-i18n="faqFiveDes">We are happy to reschedule a class if you give us 24 hours notice. All students
+          receive our rescheduling
+          policy upon registering.</p>
       </div>
 
-      <button class="accordion">Does Shaykh teach women?</button>
+      <button class="accordion" data-i18n="faqSix">Does Shaykh teach women?</button>
       <div class="panel">
-        <p>Yes. Please contact for more details. </p>
+        <p data-i18n="faqSixDes">Yes. Please contact for more details. </p>
       </div>
 
-      <button class="accordion">Do you offer financial assistance?</button>
+      <button class="accordion" data-i18n="faqSeven">Do you offer financial assistance?</button>
       <div class="panel">
-        <p>As a new academy, we can only offer very limited financial assistant. Please contact us if you will struggle
+        <p data-i18n="faqSevenDes">As a new academy, we can only offer very limited financial assistant. Please contact
+          us if you will struggle
           with payment and we will do what we can to help.
           We aim to make our services affordable, and we will teach several advanced students for free every year, upon
           interview. Please contact us for more information.
@@ -606,38 +625,39 @@
   <div class="footer">
     <div class="container">
       <div class="box">
-        <h4>about us</h3>
-          <p class="text">Iwan Academy is an educational online academy in order to serve online Qur’an, Tajweed, Arabic Language, and Islamic Studies to Arabs & non-Arabic speakers.</p>
+        <h4 data-i18n="about">about us</h3>
+          <p class="text" data-i18n="aboutMin">Iwan Academy is an educational online academy in order to serve online
+            Qur’an, Tajweed, Arabic Language, and Islamic Studies to Arabs & non-Arabic speakers.</p>
       </div>
       <div class="box">
-        <h4>iwan academy</h3>
+        <h4 data-i18n="iwanacademy">iwan academy</h3>
           <ul class="links">
-            <li><a href="../">Home</a></li>
-            <li><a href="about/">About</a></li>
-            <li><a href="courses/">Courses</a></li>
-            <li><a href="pricing/">pricing</a></li>
-            <li><a href="contact/">Contact</a></li>
+            <li><a href="../" data-i18n="home">Home</a></li>
+            <li><a href="about/" data-i18n="about">About</a></li>
+            <li><a href="courses/" data-i18n="courses">Courses</a></li>
+            <li><a href="pricing/" data-i18n="pricing">pricing</a></li>
+            <li><a href="contact/" data-i18n="contact">Contact</a></li>
           </ul>
       </div>
       <div class="box">
-        <h4>Get in touch</h4>
+        <h4 data-i18n="getTouch">Get in touch</h4>
         <div class="line">
-          <i class="fa-solid fa-envelope"></i>
+          <i class="contactIcons fa-solid fa-envelope"></i>
           <a class="info" href="mailto:admin@iwanacademy.net">admin@iwanacademy.net</a>
         </div>
         <div class="line">
-          <i class="fa-brands fa-square-facebook"></i>
+          <i class="contactIcons fa-brands fa-square-facebook"></i>
           <a class="info" href="https://www.facebook.com/Iwanacademy" target="_blank">Iwan Academy</a>
         </div>
         <div class="line">
-          <i class="fa-brands fa-square-whatsapp"></i>
+          <i class="contactIcons fa-brands fa-square-whatsapp"></i>
           <div class="info">
             <a class="info" href="https://wa.me/201063430543" target="_blank">+201063430543</a>
           </div>
         </div>
       </div>
     </div>
-    <p class="container copyright">Copyright © 2023. Iwan Academy. All Rights Reserved.</p>
+    <p class="container copyright" data-i18n="copyRight">Copyright © 2023. Iwan Academy. All Rights Reserved.</p>
   </div>
   <!-- End Footer -->
   <!-- WhatsApp wedgit -->
@@ -646,16 +666,16 @@
     <div class="top">
       <img src="images/logofav.png" />
       <div class="info">
-        <h3>Iwan Academy</h3>
-        <p>Typically replies within a day</p>
+        <h3 data-i18n="iwanacademy">Iwan Academy</h3>
+        <p data-i18n="repliesWithin">Typically replies within a day</p>
       </div>
     </div>
     <div class="chat">
       <div class="message">
-        <h4>Iwan Academy</h4>
+        <h3 data-i18n="iwanacademy">Iwan Academy</h3>
         <div class="message-info">
-          <p>As-salamu alaykum!</p>
-          <p>
+          <p data-i18n="asSalamu">As-salamu alaykum!</p>
+          <p data-i18n="WhatsMessage">
             Click below to chat with us on WhatsApp. We're available to answer
             any questions that you may have about the Iwan Academy.
           </p>
@@ -663,7 +683,7 @@
       </div>
     </div>
     <a class="start-chat" href="https://wa.me/201063430543" data-number="201063430543" data-ga-label="Iwan Academy"
-      target="_blank"><i class="fa-brands fa-whatsapp" data-fa-transform="shrink-8"></i>Start Chat</a>
+      target="_blank" data-i18n="WhatsChat">Start Chat</a>
   </div>
   <button class="wtsapp-icon" aria-label="WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
