@@ -1,25 +1,27 @@
 import translations from "./translations.js";
 
-const languageSelector = document.querySelector("select");
-languageSelector.addEventListener("change", (event) => {
-  setLanguage(event.target.value);
-  localStorage.setItem("lang", event.target.value);
-});
+const languageSelector = document.querySelectorAll(".language");
+for (var i = 0; i < languageSelector.length; i++) {
+  languageSelector[i].addEventListener("click", (e) => {
+    setLanguage(e.target.value);
+    localStorage.setItem("lang", e.target.value);
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const language = localStorage.getItem("lang") || "en";
   setLanguage(language);
-  //
-  if (localStorage.getItem("lang") == "ar") {
-    var select = document.getElementById("languageselect");
-    var option;
-    for (var i = 0; i < select.options.length; i++) {
-      option = select.options[i];
-      if (option.value == "ar") {
-        option.selected = true;
-      }
-    }
-  }
+  
+  // if (localStorage.getItem("lang") == "ar") {
+  //   var select = document.getElementById("languageselect");
+  //   var option;
+  //   for (var i = 0; i < select.options.length; i++) {
+  //     option = select.options[i];
+  //     if (option.value == "ar") {
+  //       option.selected = true;
+  //     }
+  //   }
+  // }
 });
 
 const setLanguage = (language) => {
@@ -56,6 +58,8 @@ const setLanguage = (language) => {
   all.style.fontSize = language === "ar" ? "17px" : "16px";
 
   //Simble In How Works
-  var simble = document.querySelector(".simple");
-  simble.style.letterSpacing = language === "ar" ? "0" : "1px";
+  // var simble = document.querySelectorAll("p");
+  // for (var i = 0; i < simble.length; i++) {
+  //   simble[i].style.letterSpacing = language === "ar" ? "0" : "2px";
+  // }
 };

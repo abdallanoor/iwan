@@ -204,6 +204,11 @@ ul {
     bottom: 85px;
   }
 }
+@media (max-width: 400px) {
+  .whatsapp-Widget {
+    width: 90%;
+  }
+}
 .whatsapp-Widget.show {
   visibility: visible;
   opacity: 1;
@@ -317,7 +322,7 @@ ul {
   z-index: 6;
 }
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .free {
     position: fixed;
     bottom: 20px;
@@ -334,18 +339,18 @@ ul {
     font-size: 11px;
     padding: 15px 20px;
   }
-} */
+}
 /* ----------------------------- End Book Free ----------------------------- */
 /* ---------------------------------- Go Up --------------------------------- */
 .go-up {
   position: fixed;
   bottom: 20px;
-  left: -150px;
+  left: 20px;
   width: 50px;
   height: 50px;
   cursor: pointer;
   opacity: 0;
-  transition:  0.5s all ;
+  transition: 0.3s all;
   z-index: 5;
 }
 @media (max-width: 767px) {
@@ -355,7 +360,6 @@ ul {
 }
 .go-up.show {
   opacity: 1;
-  left: 20px;
 }
 /* ---------------------------------- Go Up --------------------------------- */
 /* ------------------------------ Start navigation ------------------------------ */
@@ -419,20 +423,19 @@ ul {
   color: var(--main-color);
 }
 /* ---------------------------- */
-
 .header-book {
   width: max-content;
-  font-size: 12px;
+  font-size: 11px;
+  padding: 10px 10px;
   letter-spacing: 0px;
-}
-@media (max-width: 992px) {
-  .header-book {
-    font-size: 10px;
-    padding: 10px 10px;
-  }
 }
 @media (max-width: 767px) {
   .header-book {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .header-book-home {
     display: none;
   }
 }
@@ -441,15 +444,9 @@ ul {
   cursor: pointer;
   width: 27px;
 }
-@media (max-width: 767px) {
-  .navTrigger {
-    cursor: default;
-  }
-}
 @media (min-width: 767px) {
   .navTrigger {
     display: none;
-    cursor: default;
   }
 }
 .navTrigger i {
@@ -517,7 +514,6 @@ ul {
   }
   .nav-bar.show {
     clip-path: inset(0 0 0 0);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   }
   .nav-bar ul {
     display: flex;
@@ -812,9 +808,9 @@ ul {
     width: 100px;
   }
 }
-.how-works .steps .step h4 {
-  font-size: 47px;
-  font-weight: 600;
+.how-works .steps .step h5 {
+  font-size: 44px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .how-works .steps .step h3 {
@@ -1572,10 +1568,51 @@ button[type="submit"]:hover {
   }
 }
 /* ---------------------------- End Animations ---------------------------- */
-
-@media (max-width: 767px) {
-  #languageselect {
-    margin-left: auto;
-    margin-right: 20px;
+.language-switcher{
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width:767px) {
+  .language-switcher{
+  margin-left: auto;
+  margin-right: 20px;
   }
+}
+
+.language-switcher::after{
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: #5c5c5c;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.languages{
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 90px;
+  background-color: #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: 0.5s all;
+  clip-path: circle(1.0% at 100% 0);
+  z-index: 7;
+}
+.languages.show{
+  clip-path: circle(141.2% at 100% 0);
+}
+.languages .language{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  transition: var(--main-transition) all;
+  cursor: pointer;
+}
+.language:not(:last-child){
+  border-bottom:1px solid #ddd ;
 }

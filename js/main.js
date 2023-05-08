@@ -4,11 +4,24 @@ var navBar = document.querySelector(".nav-bar");
 navTrigger.onclick = function () {
   navTrigger.classList.toggle("active");
   navBar.classList.toggle("show");
+  //remove langwage switcher
+  languages.classList.remove("show");
 };
 document.onclick = function (e) {
-  if (!navTrigger.contains(e.target) && !navBar.contains(e.target)) {
+  if (
+    !navTrigger.contains(e.target) &&
+    !navBar.contains(e.target) &&
+    !languageSwitcher.contains(e.target) &&
+    !languages.contains(e.target) &&
+    !whatsappWidget.contains(e.target) &&
+    !wtsappIcon.contains(e.target)
+  ) {
     navTrigger.classList.remove("active");
     navBar.classList.remove("show");
+    //remove langwage switcher
+    languages.classList.remove("show");
+    //remove whatsapp widget
+    whatsappWidget.classList.remove("show");
   }
 };
 /* --------------------------------- Nav Bar --------------------------------- */
@@ -123,6 +136,11 @@ var whatsappWidget = document.querySelector(".whatsapp-Widget");
 var close = document.querySelector(".close");
 wtsappIcon.onclick = function () {
   whatsappWidget.classList.toggle("show");
+  //remove nav bar
+  navTrigger.classList.remove("active");
+  navBar.classList.remove("show");
+  //remove language switcher
+  languages.classList.remove("show");
 };
 close.onclick = function () {
   whatsappWidget.classList.remove("show");
