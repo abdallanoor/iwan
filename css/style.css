@@ -1591,7 +1591,7 @@ button[type="submit"]:hover {
 }
 .languages{
   position: absolute;
-  top: 100%;
+  top: 120%;
   right: 0;
   width: 90px;
   background-color: #ddd;
@@ -1605,7 +1605,6 @@ button[type="submit"]:hover {
 .languages.show{
   visibility: visible;
   opacity: 1;
-  top: 120%;
 }
 .languages .language{
   width: 100%;
