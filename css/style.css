@@ -1591,18 +1591,21 @@ button[type="submit"]:hover {
 }
 .languages{
   position: absolute;
-  top: 120%;
+  top: 100%;
   right: 0;
   width: 90px;
   background-color: #ddd;
   border-radius: 3px;
   overflow: hidden;
-  transition: 0.5s all;
-  clip-path: circle(1.0% at 100% 0);
-  z-index: 7;
+  transition: 0.3s all ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+  visibility: hidden;
+  opacity: 0;
 }
 .languages.show{
-  clip-path: circle(141.2% at 100% 0);
+  visibility: visible;
+  opacity: 1;
+  top: 120%;
 }
 .languages .language{
   width: 100%;
