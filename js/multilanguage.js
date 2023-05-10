@@ -1,27 +1,20 @@
 import translations from "./translations.js";
 
+
 const languageSelector = document.querySelectorAll(".language");
 for (var i = 0; i < languageSelector.length; i++) {
   languageSelector[i].addEventListener("click", (e) => {
     setLanguage(e.target.value);
     localStorage.setItem("lang", e.target.value);
+    //relode page
+    location.reload();
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const language = localStorage.getItem("lang") || "en";
+  // const language = localStorage.getItem("lang") || "ar";
   setLanguage(language);
-  
-  // if (localStorage.getItem("lang") == "ar") {
-  //   var select = document.getElementById("languageselect");
-  //   var option;
-  //   for (var i = 0; i < select.options.length; i++) {
-  //     option = select.options[i];
-  //     if (option.value == "ar") {
-  //       option.selected = true;
-  //     }
-  //   }
-  // }
 });
 
 const setLanguage = (language) => {
@@ -56,10 +49,17 @@ const setLanguage = (language) => {
   //change font size in website > arabic
   var all = document.querySelector("*");
   all.style.fontSize = language === "ar" ? "17px" : "16px";
-
+  document.lang;
   //Simble In How Works
   // var simble = document.querySelectorAll("p");
   // for (var i = 0; i < simble.length; i++) {
   //   simble[i].style.letterSpacing = language === "ar" ? "0" : "2px";
   // }
+  //add value to lang attribute
+  if (localStorage.getItem("lang") == "en") {
+    document.documentElement.setAttribute("lang", "en");
+  } else {
+    document.documentElement.setAttribute("lang", "ar");
+  }
 };
+
