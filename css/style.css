@@ -1598,9 +1598,11 @@ button[type="submit"]:hover {
   border-radius: 3px;
   overflow: hidden;
   transition: 0.3s all ease;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 9px 0px;
   visibility: hidden;
   opacity: 0;
+  border: 1px solid var(--main-color);
+
 }
 .languages.show{
   visibility: visible;
@@ -1610,11 +1612,20 @@ button[type="submit"]:hover {
   width: 100%;
   padding: 10px;
   border: none;
-  background-color: var(--main-color);
-  color: white;
+  background-color: white;
+  color: var(--main-color);
   transition: var(--main-transition) all;
   cursor: pointer;
+  font-weight: 500;
 }
+@media (min-width:767px) {
+  .languages .language:hover{
+    background-color: var(--main-color);
+    color: white;
+  }
+}
+
+
 .language:not(:last-child){
-  border-bottom:1px solid #ddd ;
+  border-bottom:1px solid var(--main-color) ;
 }
