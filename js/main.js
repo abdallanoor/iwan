@@ -1,3 +1,4 @@
+
 /* --------------------------------- Nav Bar --------------------------------- */
 var navTrigger = document.querySelector(".navTrigger");
 var navBar = document.querySelector(".nav-bar");

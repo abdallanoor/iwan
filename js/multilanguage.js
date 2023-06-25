@@ -1,19 +1,17 @@
 import translations from "./translations.js";
 
-
 const languageSelector = document.querySelectorAll(".language");
 for (var i = 0; i < languageSelector.length; i++) {
   languageSelector[i].addEventListener("click", (e) => {
     setLanguage(e.target.value);
     localStorage.setItem("lang", e.target.value);
     //relode page
-    location.reload();
+    // location.reload();
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const language = localStorage.getItem("lang") || "en";
-  // const language = localStorage.getItem("lang") || "ar";
   setLanguage(language);
 });
 
@@ -32,13 +30,13 @@ const setLanguage = (language) => {
   //letterSpacing - a
   var spaceOme = document.querySelectorAll("a");
   for (var i = 0; i < spaceOme.length; i++) {
-    spaceOme[i].style.letterSpacing = language === "ar" ? "0" : "1px";
+    spaceOme[i].style.letterSpacing = language === "ar" ? "0" : "0";
   }
   //Footer - h4
   var spaceTwo = document.querySelectorAll("h4");
   for (var i = 0; i < spaceTwo.length; i++) {
     spaceTwo[i].style.letterSpacing = language === "ar" ? "0" : "1.6px";
-    spaceTwo[i].style.fontSize = language === "ar" ? "20px" : "16px";
+    spaceTwo[i].style.fontSize = language === "ar" ? "20px" : "18px";
   }
   //contactIcons - Margin
   var contactIcons = document.querySelectorAll(".contactIcons");
@@ -56,10 +54,6 @@ const setLanguage = (language) => {
   //   simble[i].style.letterSpacing = language === "ar" ? "0" : "2px";
   // }
   //add value to lang attribute
-  if (localStorage.getItem("lang") == "en") {
-    document.documentElement.setAttribute("lang", "en");
-  } else {
-    document.documentElement.setAttribute("lang", "ar");
-  }
+  var langAttribute = document.documentElement;
+  langAttribute.lang = language === "en" ? "en" : "ar";
 };
-

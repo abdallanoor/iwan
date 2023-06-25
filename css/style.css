@@ -17,6 +17,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* animation: fade 0.5s ease-in-out; */
 }
 
 /* Hide scrollbar */
@@ -350,6 +351,7 @@ ul {
   height: 50px;
   cursor: pointer;
   opacity: 0;
+  visibility: hidden;
   transition: 0.3s all;
   z-index: 5;
 }
@@ -360,6 +362,7 @@ ul {
 }
 .go-up.show {
   opacity: 1;
+  visibility: visible;
 }
 /* ---------------------------------- Go Up --------------------------------- */
 /* ------------------------------ Start navigation ------------------------------ */
@@ -536,7 +539,7 @@ ul {
 .landing {
   background-image: url(../images/bg.png);
   background-size: 100px auto;
-  background-color: #f7fdff;
+  /* background-color: #f7fdff; */
 }
 .landing .container {
   height: calc(100vh - 79px);
@@ -964,9 +967,11 @@ ul {
   font-family: fontawesome;
   color: #000;
   font-size: 15px;
+  transition: all 0.2s;
 }
 .accordion.active::after {
-  content: "\f106";
+  transform: rotate(-180deg);
+  
 }
 .panel {
   padding: 0 18px;
@@ -1568,20 +1573,20 @@ button[type="submit"]:hover {
   }
 }
 /* ---------------------------- End Animations ---------------------------- */
-.language-switcher{
+.language-switcher {
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
 }
-@media (max-width:767px) {
-  .language-switcher{
-  margin-left: auto;
-  margin-right: 20px;
+@media (max-width: 767px) {
+  .language-switcher {
+    margin-left: auto;
+    margin-right: 20px;
   }
 }
 
-.language-switcher::after{
+.language-switcher::after {
   content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
@@ -1589,7 +1594,7 @@ button[type="submit"]:hover {
   margin-left: 5px;
   font-size: 15px;
 }
-.languages{
+.languages {
   position: absolute;
   top: 120%;
   right: 0;
@@ -1602,13 +1607,12 @@ button[type="submit"]:hover {
   visibility: hidden;
   opacity: 0;
   border: 1px solid var(--main-color);
-
 }
-.languages.show{
+.languages.show {
   visibility: visible;
   opacity: 1;
 }
-.languages .language{
+.languages .language {
   width: 100%;
   padding: 10px;
   border: none;
@@ -1618,14 +1622,13 @@ button[type="submit"]:hover {
   cursor: pointer;
   font-weight: 500;
 }
-@media (min-width:767px) {
-  .languages .language:hover{
+@media (min-width: 767px) {
+  .languages .language:hover {
     background-color: var(--main-color);
     color: white;
   }
 }
 
-
-.language:not(:last-child){
-  border-bottom:1px solid var(--main-color) ;
+.language:not(:last-child) {
+  border-bottom: 1px solid var(--main-color);
 }
